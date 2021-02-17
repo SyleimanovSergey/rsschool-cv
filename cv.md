@@ -51,9 +51,12 @@
 ```
 ---
 
-+ 6:
++ 6: 
 
 ---
 
-+ 7: Beginner.
++ 7: Html Academy Professional Online Course HTML and CSS, Level 1,2.
+
+
++ 8: Beginner.
 
