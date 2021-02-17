@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML, CSS & Git Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">HTML, CSS & Git Basics</header>
+<main class="main">
+    <h1 class="main--title">HTML, CSS & Git Basics</h1>
+    <ol class="main-list">
+        <li class="main-list--item main-list--name">
+            <h2 class="name--title">Name and surname:</h2>
+            <p class="name--text">Sergey Suleimanov</p>
+        </li>
+        <li class="main-list--item main-list--contacts">
+            <h2 class="contacts-title">Contacts for communication</h2>
+            <ul class="contacts-list">
+                <li class="contacts-list--item">Phone: +7 (775) 945-35-37</li>
+                <li class="contacts-list--item">Email: ssuleimanov.94@gmail.com</li>
+            </ul>
+        </li>
+        <li class="main-list--item main-list--information">
+            <h2 class="information-title">Brief information about yourself</h2>
+            <p class="information-text">3: The goal is to become competitively capable to work in frontend development, creating a product that will be
+                useful for people and in demand among employers. Strengths: I like working in teams with experts, learning and
+                sharing knowledge. I realize that my knowledge is not enough and strive to get more information about the topic I
+                am interested in. Until I get it, I compensate with diligence) I take criticism of my work calmly.
+                Experience: prior to this course, was self-trained in website layout, as well as studied the methodology of BEM, studied the basic skills of working with JS.
+            </p>
+        </li>
+        <li class="main-list--item main-list--skills">
+            <h2 class="skills-title">Skills</h2>
+            <p class="skills-text">HTML5, CSS3, JavaScript, BEM</p>
+        </li>
+        <li class="main-list--item main-list--code-examples">
+            <h2 class="code-examples-title">Code examples</h2>
+            <pre class="code-examples-content">
+            'use strict';
+
+            (function (){
+
+                window.addPins = function () {
+
+                    if (MAP_PINS.querySelectorAll('.map__pin--item').length > 1) {
+                        [].forEach.call(MAP_PINS.querySelectorAll('.map__pin--item'), function (i) {
+                        i.parentNode.removeChild(i);
+                        })
+                    }
+
+                    const PINS_ITEM_BUTTON = document.querySelector('#pin').content.querySelector('button');
+
+                    for (let i = 1; i <= 8; i++) {
+                        let newPin = PINS_ITEM_BUTTON.cloneNode(true)
+                        fragment.appendChild(newPin)
+                        MAP_PINS.appendChild(fragment)
+                        newPin.classList.add('map__pin--item')
+                        newPin.style = 'left:' + UTILS.offer.location.x() + 'px; top:' + UTILS.offer.location.y() + 'px';
+                        newPin.querySelector("img").src = UTILS.author.avatar(i);
+                        newPin.querySelector("img").alt = UTILS.offer.title();
+                    }
+                }
+            }())
+        </pre>
+        </li>
+        <li class="main-list--item main-list--experience">
+            <h2 class="experience-title">Experience</h2>
+            <p class="experience-text"></p>
+        </li>
+        <li class="main-list--item main-list--code-education">
+            <h2 class="education-title">Education</h2>
+            <p class="education-text">Html Academy Professional Online Course HTML and CSS, Level 1,2.</p>
+        </li>
+        <li class="main-list--item main-list--language">
+            <h2 class="language-title">English language</h2>
+            <p class="language-text">Beginner</p>
+        </li>
+    </ol>
+</main>
+</body>
+</html>
